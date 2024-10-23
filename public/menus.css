@@ -1,0 +1,508 @@
+main p {
+    text-align: center;
+}
+main {
+    padding: 1rem 0;
+}
+section{
+    background-color: #ebe3db;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    padding: 0 1rem;
+    border: none;
+}
+
+.buttons button:hover{
+    background-color: #950000;
+    border: none;
+    color: white;
+}
+section img{
+    box-shadow: 3px 3px 8px rgba(76,67,67,.5);
+}
+
+.menus{
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.menus img{
+    width: 100%;
+    height: auto;
+}
+.hover-text {
+    position: absolute;
+    background-color: rgba(76,67,67,.9);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+    visibility: hidden;
+  }
+.container:hover .hover-text{
+        visibility: visible;
+        opacity: 1;
+}
+
+.container-fish1{
+    position: relative
+}
+
+.deserts{
+    height: 250px;
+}
+
+.drinks{
+    height: 250px;
+}
+
+/*Menus grid*/
+.menus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    justify-items: center;
+}
+.fish-01{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.vegan-03{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.meat-03{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.fish-02{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.meat-01{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.vegan-02{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.meat-02{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.fish-03{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.vegan-01{
+    grid-column : 1 / span 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+/*Fin menus grid*/
+
+/*Deserts grid*/
+.deserts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    justify-items: center;
+}
+.desert-01{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.desert-02{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.desert-03{
+    grid-column : 1 / span 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+/*Fin deserts grid*/
+
+/*Drinks grid*/
+.drinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    justify-items: center;
+}
+
+.drink-01{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.drink-02{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.drink-03{
+    grid-column : 1 / span 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+/*Fin drinks grid*/
+
+/*Responsive*/
+@media screen and (min-width:780px) {
+    header{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: none;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .menus{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        justify-items: center;
+    }
+    .fish-01{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .vegan-03{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .meat-03{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .fish-02{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .meat-01{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .vegan-02{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .meat-02{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .fish-03{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .vegan-01{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+   
+    /*Fin menus grid*/
+    
+    /*Deserts grid*/
+    .deserts{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        justify-items: center;
+    }
+    .desert-01{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .desert-02{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .desert-03{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    /*Fin deserts grid*/
+    
+    /*Drinks grid*/
+    .drinks{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        justify-items: center;
+    }
+    
+    .drink-01{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .drink-02{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .drink-03{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    /*Fin drinks grid*/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (min-width:1100px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: none;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        background-color: #ebe3db;
+    }
+
+    img{
+        width: 100%;
+    }
+    .menus{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        margin: 20px 0;
+        width: 100%;
+        justify-items: center;
+        align-content: center;
+    }
+    .fish-01{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .vegan-03{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .meat-03{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .fish-02{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .meat-01{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .vegan-02{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .meat-02{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .fish-03{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .vegan-01{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /*Fin menus grid*/
+
+     
+    /*Deserts grid*/
+    .deserts{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        justify-items: center;
+        align-content: center;
+    }
+    .desert-01{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .desert-02{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .desert-03{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    /*Fin deserts grid*/
+    
+    /*Drinks grid*/
+    .drinks{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        justify-items: center;
+        align-content: center;
+    }
+    
+    .drink-01{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .drink-02{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .drink-03{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    /*Fin drinks grid*/
+footer{
+    display: flex;
+    justify-content: center ;
+    gap: 7rem
+    }
+}
+/*Fin responsive*/

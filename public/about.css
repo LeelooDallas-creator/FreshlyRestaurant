@@ -1,0 +1,13 @@
+section{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+}
+section img{
+    width: 95%;
+    jus
+}
+section p{
+    text-align: center;
+    font-weight: bold;
+}

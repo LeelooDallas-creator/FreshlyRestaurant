@@ -1,0 +1,73 @@
+.slideshow-container{
+    padding: 2rem;
+}
+section p{
+    border-bottom: 1px dashed #4c4343;
+    text-align: left;
+    padding: 2rem;
+}
+section img{
+    width: 95%;
+    align-self: center;
+}
+
+footer h3{
+    border-bottom: 1px dashed #ebe3db ;
+}
+
+@media screen and (min-width:780px) {
+    header{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: none;
+        align-items: center;
+    }
+    .about{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .about .location{
+        width: 40%;
+    }
+    .menus{
+        display: flex;
+        gap: 1rem;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    } 
+    footer{
+        display: flex;
+        justify-content: center ;
+        gap: 7rem
+        }
+}
+
+@media screen and (min-width:1100px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: none;
+        align-items: center;
+    }
+    .menus{
+        display: flex;
+        gap: 1rem;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    footer{
+        display: flex;
+        justify-content: center ;
+        gap: 7rem
+    }
+}
